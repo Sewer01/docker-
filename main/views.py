@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def index(reguest):
-    return HttpResponse("<h4> Hello Sergey!!! </h4>")
+def index(request):
+    return render(request,'main.index')
 
-def about(reguest):
+def about(request):
     return HttpResponse("<h4> My name Sergey!!! </h4>")
