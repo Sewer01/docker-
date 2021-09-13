@@ -6,6 +6,6 @@ WORKDIR /app
 # Копирует все файлы из нашего локального проекта в контейнер
 COPY  . .
 # Запускает команду pip install для всех библиотек, перечисленных в requirements.txt
-RUN pip install -r requirements.txt
+#RUN pip install -r requirements.txt
 EXPOSE 8000
-CMD python manage.py runserver 0.0.0.0:8000
+#CMD python manage.py runserver 0.0.0.0:8000
