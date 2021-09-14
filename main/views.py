@@ -7,4 +7,8 @@ def index(request):
     return render(request,'main/index.html', {'title': 'Главная', 'tasks': task})
 
 def about(request):
-    return render(request,'about/about.html')
+    return render(request,'main/about.html')
+
+
+def tabl(request):
+    return render(request,'main/tabl.html')
