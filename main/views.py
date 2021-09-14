@@ -14,7 +14,7 @@ def about(request):
 
 
 def tabl(request):
-    
+
     form = TaskForm()
     context = {'form':form}
-    return render(request,'main/tabl.html')
+    return render(request,'main/tabl.html',context)
