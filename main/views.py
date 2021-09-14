@@ -19,7 +19,7 @@ def tabl(request):
         form = TaskForm(request.POST)
         if form.is_valid():
             form.save()
-            redirect('home')
+            return redirect('home')
         else: error = "ERROR"    
 
     form = TaskForm()
