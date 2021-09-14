@@ -8,6 +8,6 @@ class Task(models.Model):
     def __str__(self):
         return self.title
 
-    class meta:
+    class Meta:
         verbos_name = 'Задание'
         verbos_name_plural = 'Задания'
