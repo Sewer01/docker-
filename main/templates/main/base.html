@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       <h5 class="my-0 mr-md-auto font-weight-normal">Sewer</h5>
   
-        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <nav class="my-2 my-md-0 mr-md-3">
           
-          <a class="me-3 py-2 text-dark " href="https://www.youtube.com/">YouTube</a>
-          <a class="me-3 py-2 text-dark " href={% url 'home' %}>Главная</a>
+          <a class="py-2 text-dark " href="https://www.youtube.com/">YouTube</a>
+          <a class="py-2 text-dark " href={% url 'home' %}>Главная</a>
           <a class="py-2 text-dark " href={% url 'about' %}>Обо мне</a>
-          <a class="me-3 py-2 text-dark " href='admin'>ADMIN</a>
-          <a class="me-3 py-2 text-dark " href={% url 'tabl' %}>Задания</a>
+          <a class="py-2 text-dark " href='admin'>ADMIN</a>
+          <a class="py-2 text-dark " href={% url 'tabl' %}>Задания</a>
         </nav>
     </div>
     {% block body %}{% endblock %}
